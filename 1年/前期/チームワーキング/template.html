@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  </head>
+  <body>
+    <script>
+      function setup()
+ {
+        createCanvas(320, 180);
+        noLoop(); // only draw once
+        background(255);
+
+        stroke("black");
+        strokeWeight(0.1);
+
+        let n = 18;
+        let maxW = width;
+        let maxH = height;
+        let minW = 30;
+        let minH = 20;
+
+        let stepW = (maxW - minW) / (n - 1);
+        let stepH = (maxH - minH) / (n - 1);
+
+        colorMode(HSL, 360, 100, 100); 
+
+        for (let i = 0; i < n; i++)
+{
+          let w = maxW - i * stepW;
+          let h = maxH - i * stepH;
+          let x = width - w;
+          let y = height - h;
+
+          let hue = random(360);
+          fill(hue, 80, 60); 
+          rect(x, y, w, h);
+        }
+      }
+    </script>
+  </body>
+</html>

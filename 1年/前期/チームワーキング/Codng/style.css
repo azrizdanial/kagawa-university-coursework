@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #003366;
+  color: white;
+  padding: 1em 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1em;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#hero {
+  background: url('https://source.unsplash.com/1600x600/?technology,computer') no-repeat center/cover;
+  color: white;
+  padding: 6em 2em;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 2.5em;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.8em 1.5em;
+  background: #0055aa;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+section {
+  padding: 4em 2em;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.features {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.feature {
+  flex: 1;
+  min-width: 250px;
+  background: white;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form {
+  background: white;
+  padding: 2em;
+  border-radius: 8px;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #0077cc;
+  color: white;
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 1.5em 0;
+}
